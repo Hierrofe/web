@@ -1,0 +1,667 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--secondary_grey);
+  font-family: 'Lato', sans-serif;
+}
+:root {
+  --nav_height: 82px;
+  --nav_height_mobile: 62px;
+}
+/* -------- Fonts -------- */
+
+/* Lato font weights */
+/* Light ----> 300 */
+/* Regular ----> 400 */
+/* Bold ----> 700 */
+/* Black ----> 900 */
+
+/* Heading 1 - Mobile */
+h1 {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 45px;
+}
+/* Heading 1 - Desktop */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 60px;
+  }
+}
+/* Heading 2 - Heavy */
+h2 {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 42px;
+}
+/* Heading 4 - Heavy */
+h4 {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 31px;
+}
+/* Body Large */
+.body-large {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 31px;
+}
+/* Body Small */
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+/* Label */
+.label {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 26px;
+}
+/* Caption */
+.caption {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+/* Caption Black*/
+.caption-black {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 20px;
+}
+/* Inputs */
+input, textarea {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+input::placeholder, textarea::placeholder {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+}
+button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* -------- Colors -------- */
+:root {
+  /* Primary colors */
+  --primary_blue: #1A3571;
+  --secondary_grey: #343A40;
+  --white: #FFFFFF;
+  /* Secondary colors */
+  --accent_1_red: #BF2A2A;
+  /* Neutrals */
+  --grey_1: #E5E5E5;
+  --grey_2: #F5F5F5;
+}
+.white {
+  color: var(--white);
+}
+
+/* ******** Common ******** */
+.scroll-anchor {
+  height: 1px;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1160px;
+}
+.texto-con-linea-roja {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.texto-con-linea-roja img {
+  margin: 12px 0 0 10px;
+}
+h1, h2, .body-large, .texto-con-linea-roja {
+  margin-bottom: 28px;
+}
+button, a {
+  cursor: pointer;
+}
+button:hover {
+  opacity: 80%;
+}
+@media (max-width: 767px) {
+  .not-mobile {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .not-desktop {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .desktop-only {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    margin-bottom: 28px;
+  }
+}
+
+/* ******** Navigation ******** */
+header {
+  background-color: var(--primary_blue);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--nav_height_mobile);
+}
+.logo img {
+  height: 37px;
+  width: 154px;
+}
+@media (min-width: 768px) {
+  nav {
+    height: var(--nav_height);
+  }
+  .logo img {
+    height: 42px;
+    width: 211px;
+  }
+}
+@media (min-width: 1160px) {
+  nav {
+    padding: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .desktop-options {
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .desktop-options p {
+    padding: 10px 5px 6px;
+    border-bottom: 3px solid transparent;
+  }
+  .desktop-options p:hover {
+    cursor: pointer;
+    border-bottom: 3px solid var(--accent_1_red);
+  }
+}
+
+/* ******** White menu ******** */
+.white-menu {
+  width: 0;
+  right: 0;
+  z-index: 2;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--white);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.active {
+  width: 320px;
+}
+.visible {
+  opacity: 100%;
+}
+.not-visible {
+  opacity: 0%;
+}
+.close-modal {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.white-menu .cross {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+.white-menu .options {
+  margin-top: 60px;
+}
+.white-menu .options p {
+  margin-left: 35px;
+  margin-bottom: 45px;
+}
+
+/* ******** Hero banner ******** */
+.hero {
+  padding: 60px 20px 80px;
+  background-color: var(--primary_blue);
+}
+.hero .red-dot {
+  line-height: 0;
+  font-size: 60px;
+  color: var(--accent_1_red);
+}
+@media (min-width: 768px) {
+  .hero {
+    padding: 70px 0 80px;
+  }
+  .hero .paragraphs-and-picture {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 790px;
+  }
+  .hero img, .hero .picture {
+    width: 382px;
+    height: 287px;
+    border-radius: 8px;
+  }
+  .hero .picture {
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 35px;
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 7.5px;
+    background: var(--grey_1);
+  }
+  .swiper-pagination-bullet-active {
+    background: var(--accent_1_red);
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    padding: 50px 0 80px;
+  }
+  .hero img, .hero .picture {
+    width: 420px;
+    height: 314px;
+  }
+  .hero .paragraphs-and-picture {
+    max-width: none;
+    justify-content: flex-start;
+  }
+  .hero .paragraphs {
+    width: 50%;
+  }
+  .hero .picture {
+    margin-top: 0;
+    margin-left: 80px;
+  }
+}
+
+/* ******** Proveedores ******** */
+.proveedores {
+  padding: 50px 0 25px;
+}
+.proveedores .texto-con-linea-roja {
+  max-width: 220px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .proveedores .texto-con-linea-roja {
+    max-width: none;
+  }
+}
+.proveedores .logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.proveedores img {
+  margin-bottom: 20px;
+}
+.proveedores .acindar {
+  width: 109px;
+  height: 62px;
+  margin-left: -15px;
+}
+.proveedores .sidersa {
+  width: 49px;
+  height: 54px;
+  margin-right: 21px;
+}
+.proveedores .cresata {
+  width: 72px;
+  height: 34px;
+  margin-right: 21px;
+}
+.proveedores .conarco {
+  width: 76px;
+  height: 34px;
+}
+@media (min-width: 768px) {
+  .proveedores .acindar {
+    width: 181px;
+    height: 103px;
+    margin-left: -25px;
+  }
+  .proveedores .sidersa {
+    width: 88px;
+    height: 97px;
+    margin-right: 35px;
+    margin-left: 5px;
+  }
+  .proveedores .cresata {
+    width: 107px;
+    height: 50px;
+    margin-right: 35px;
+  }
+  .proveedores .conarco {
+    width: 112px;
+    height: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .proveedores .sidersa {
+    margin-right: 70px;
+    margin-left: 30px;
+  }
+  .proveedores .cresata {
+    margin-right: 70px;
+  }
+}
+
+/* ******** Productos ******** */
+.productos {
+  padding: 80px 0;
+  background: var(--grey_2);
+}
+.productos .body-large {
+  max-width: 580px;
+  margin-bottom: 45px;
+}
+.productos li {
+  padding: 12px 0;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .productos {
+    padding: 130px 0;
+  }
+  .productos .listado-de-productos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 600px;
+  }
+  .productos .listado-de-productos .caption {
+    max-width: 340px;
+    padding-right: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .productos .listado-de-productos .caption {
+    padding-right: 0;
+  }
+}
+
+/* ******** Sucursales ******** */
+.sucursales {
+  padding: 80px 0;
+}
+.sucursales .dias-y-horarios {
+  margin-top: 70px;
+}
+.sucursales .body-large {
+  max-width: 715px;
+}
+.sucursales .dias-y-horarios .label {
+  margin-bottom: 24px;
+}
+.sucursales .dias-y-horarios .linea {
+  display: flex;
+  justify-content: space-between;
+  max-width: 280px;
+}
+.sucursales .dias-y-horarios .linea p {
+  margin-bottom: 4px;
+}
+.sucursales .dias-y-horarios .linea p:nth-of-type(2) {
+  margin-left: 50px;
+}
+.sucursales .blue-box {
+  display: flex;
+  align-items: center;
+  height: 210px;
+  border-radius: 8px;
+  margin: 80px auto 0;
+  background-color: var(--primary_blue);
+}
+.sucursales .blue-box .sucursal-info {
+  padding-left: 20px;
+}
+.sucursales .blue-box .localidad {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.sucursales .blue-box .linea {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.sucursales .blue-box .linea .icono {
+  display: flex;
+  justify-content: flex-start;
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+.sucursales .mapa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.sucursales .mapa iframe {
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  .sucursales {
+    padding: 130px 0;
+  }
+  .sucursales .blue-box {
+    height: 115px;
+  }
+  .sucursales .blue-box .bloque {
+    width: 250px;
+  }
+  .sucursales .blue-box .linea {
+    margin: 8px 0;
+  }
+  .sucursales .blue-box .sucursal-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 720px;
+  }
+  .sucursales .blue-box .localidad {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .sucursales .blue-box .sucursal-info {
+    width: 800px;
+  }
+  .sucursales .blue-box .linea .icono {
+    margin-right: 20px;
+  }
+}
+
+/* ******** Contacto ******** */
+.contacto {
+  padding: 80px 0;
+  background: var(--grey_2);
+}
+.contacto .formulario-de-contacto {
+  max-width: 335px;
+}
+.contacto .intro {
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+.contacto input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-bottom: 14px;
+  border: 3px solid var(--grey_1);
+}
+.contacto textarea {
+  width: 100%;
+  resize: none;
+  height: 200px;
+  border-radius: 5px;
+  margin-bottom: 14px;
+  padding: 10px;
+  border: 3px solid var(--grey_1);
+}
+.contacto button {
+  width: 100px;
+  height: 45px;
+  border: none;
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: var(--primary_blue);
+}
+@media (min-width: 768px) {
+  .contacto {
+    padding: 130px 0;
+  }
+  .contacto .container {
+    display: flex;
+  }
+  .contacto .intro {
+    width: 312px;
+    margin-right: 80px;
+  }
+  .contacto form {
+    width: 312px;
+  }
+  .contacto .formulario-de-contacto {
+    max-width: none;
+    margin-top: 65px;
+  }
+}
+@media (min-width: 1024px) {
+  .contacto .intro {
+    width: 390px;
+    margin-right: 120px;
+  }
+  .contacto form {
+    width: 450px;
+  }
+}
+
+/* ******** Footer ******** */
+.footer {
+  background: var(--primary_blue);
+}
+.footer .container {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.footer .red-rectangle {
+  height: 6px;
+  background: var(--accent_1_red);
+}
+.footer .sucursal-info:last-of-type {
+  margin-top: 50px;
+}
+.footer .sucursal-info .linea {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.footer .sucursal-info .linea .icono {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  margin-right: 20px;
+}
+.footer .social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin-top: 60px;
+  margin-left: -10px;
+}
+.footer .social-media a {
+  padding: 10px;
+  border-bottom: 3px solid transparent;
+}
+.footer .social-media a:hover {
+  border-bottom: 3px solid var(--accent_1_red);
+}
+.footer .social-media img {
+  width: 20px;
+  height: 20px;
+}
+@media (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer .sucursales-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .footer .sucursal-info:last-of-type {
+    margin-top: 0;
+  }
+  .footer .sucursal-info:first-of-type {
+    margin-right: 120px;
+  }
+  .footer .social-media {
+    margin-left: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 90px;
+  }
+  .footer .social-media {
+    margin-top: 0;
+  }
+  .footer .sucursal-info:first-of-type {
+    margin-right: 160px;
+  }
+  .footer .social-media {
+    width: 180px;
+    margin-right: -10px;
+  }
+}
