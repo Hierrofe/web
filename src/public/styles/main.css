@@ -246,6 +246,7 @@ nav {
 .white-menu .options p {
   margin-left: 35px;
   margin-bottom: 45px;
+  color: var(--primary_blue);
 }
 
 /* ******** Hero banner ******** */
