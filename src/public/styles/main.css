@@ -93,7 +93,8 @@ button {
 /* -------- Colors -------- */
 :root {
   /* Primary colors */
-  --primary_blue: #1A3571;
+  --primary_blue: #274381;
+  /* --primary_blue: #1A3571; */
   --secondary_grey: #343A40;
   --white: #FFFFFF;
   /* Secondary colors */
