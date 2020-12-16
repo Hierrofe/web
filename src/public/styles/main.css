@@ -127,6 +127,10 @@ h1, h2, .body-large, .texto-con-linea-roja {
 button, a {
   cursor: pointer;
 }
+a[href^=tel] {
+  text-decoration: inherit;
+  color: inherit;
+}
 @media (max-width: 767px) {
   .not-mobile {
     display: none;
