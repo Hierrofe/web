@@ -223,7 +223,8 @@ nav {
   width: 320px;
 }
 .close-modal {
-  opacity: 0%;
+  visibility: hidden;
+  opacity: 0;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
@@ -231,7 +232,8 @@ nav {
   transition: all 0.3s ease-out;
 }
 .visible {
-  opacity: 100%;
+  visibility: visible;
+  opacity: 1;
 }
 .white-menu .cross {
   display: flex;
