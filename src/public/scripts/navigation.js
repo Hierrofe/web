@@ -11,13 +11,11 @@ window.addEventListener("load", function() {
   openModal.addEventListener('click', function() {
     modal.classList.toggle('active', true);
     closeModal.classList.toggle('visible', true);
-    closeModal.classList.toggle('not-visible', false);
     document.body.classList.toggle('no-scroll', true);
   });
   closeModal.addEventListener('click', function() {
     modal.classList.toggle('active', false);
     closeModal.classList.toggle('visible', false);
-    closeModal.classList.toggle('not-visible', true);
     document.body.classList.toggle('no-scroll', false);
   });
 
@@ -49,7 +47,6 @@ window.addEventListener("load", function() {
     productosSection.scrollIntoView({behavior: 'smooth'});
     modal.classList.toggle('active', false);
     closeModal.classList.toggle('visible', false);
-    closeModal.classList.toggle('not-visible', true);
     document.body.classList.toggle('no-scroll', false);
   });
 
@@ -59,7 +56,6 @@ window.addEventListener("load", function() {
     sucursalesSection.scrollIntoView({behavior: 'smooth'});
     modal.classList.toggle('active', false);
     closeModal.classList.toggle('visible', false);
-    closeModal.classList.toggle('not-visible', true);
     document.body.classList.toggle('no-scroll', false);
   });
 
@@ -69,7 +65,6 @@ window.addEventListener("load", function() {
     contactoSection.scrollIntoView({behavior: 'smooth'});
     modal.classList.toggle('active', false);
     closeModal.classList.toggle('visible', false);
-    closeModal.classList.toggle('not-visible', true);
     document.body.classList.toggle('no-scroll', false);
   });
 

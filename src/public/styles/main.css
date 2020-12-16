@@ -218,18 +218,16 @@ nav {
 .active {
   width: 320px;
 }
-.visible {
-  opacity: 100%;
-}
-.not-visible {
-  opacity: 0%;
-}
 .close-modal {
+  opacity: 0%;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+.visible {
+  opacity: 100%;
 }
 .white-menu .cross {
   display: flex;
