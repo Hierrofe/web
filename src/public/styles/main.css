@@ -446,7 +446,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    max-height: 600px;
+    height: 600px;
   }
   .productos .listado-de-productos ul {
     max-width: 340px;
