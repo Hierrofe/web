@@ -66,6 +66,7 @@ input, textarea {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  -webkit-appearance: none;
 }
 input::placeholder, textarea::placeholder {
   font-size: 16px;
