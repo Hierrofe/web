@@ -449,6 +449,7 @@ nav {
     height: 600px;
   }
   .productos .listado-de-productos ul {
+    height: 100%;
     max-width: 340px;
     padding-right: 40px;
   }
