@@ -37,7 +37,7 @@
         <!-- ******** White menu ******** -->
         <div class="white-menu" id="modal">
           <div class="cross">
-            <img class="close-modal not-visible" id="closeModal" src="./src/public/images/icons/red-cross.svg" alt="Red cross">
+            <img class="close-modal not-visible" id="closeModal" src="./src/public/images/icons/green-cross.svg" alt="Red cross">
           </div>
           <div class="options">
             <p id="productosButton2">Productos</p>
@@ -94,15 +94,30 @@
       <!-- ******** Proveedores ******** -->
       <div class="proveedores">
         <div class="container">
-          <div class="texto-con-linea-roja">
-            <p>ALGUNOS DE NUESTROS PROVEEDORES</p>
-            <img src="./src/public/images/red-line.svg" alt="Red line">
+
+          <p>Algunos de nuestros proveedores:</p>
+
+          <!-- Mobile display -->
+          <div class="logos-swiper mobile-only">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="acindar" src="./src/public/images/acindar.png" alt="Acindar logo"></div>
+                  <div class="swiper-slide"><img class="cresata" src="./src/public/images/cresata.jpg" alt="Cresata logo"></div>
+                  <div class="swiper-slide"><img class="conarco" src="./src/public/images/conarco.png" alt="Conarco logo"></div>
+                  <div class="swiper-slide"><img class="sidersa" src="./src/public/images/sidersa.png" alt="Sidersa logo"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
           </div>
-          <div class="logos">
-            <img class="acindar" src="./src/public/images/acindar.png" alt="Acindar logo">
-            <img class="sidersa" src="./src/public/images/sidersa.png" alt="Sidersa logo">
-            <img class="cresata" src="./src/public/images/cresata.jpg" alt="Cresata logo">
-            <img class="conarco" src="./src/public/images/conarco.png" alt="Conarco logo">
+
+          <!-- Desktop/tablet display -->
+          <div class="not-mobile">
+            <div class="logos">
+              <img class="acindar" src="./src/public/images/acindar.png" alt="Acindar logo">
+              <img class="sidersa" src="./src/public/images/sidersa.png" alt="Sidersa logo">
+              <img class="cresata" src="./src/public/images/cresata.jpg" alt="Cresata logo">
+              <img class="conarco" src="./src/public/images/conarco.png" alt="Conarco logo">
+            </div>
           </div>
         </div>
       </div>
@@ -115,10 +130,6 @@
           <div class="scroll-anchor" id="productosSection"></div>
 
           <!-- Introduccion -->
-          <div class="texto-con-linea-roja">
-            <p >OFRECEMOS</p>
-            <img src="./src/public/images/red-line.svg" alt="Red line">
-          </div>
           <h2>Nuestros productos</h2>
           <p class="body-large">
             A continuación puede encontrar un listado de nuestros principales
@@ -127,31 +138,31 @@
 
           <!-- Listado de productos -->
           <div class="listado-de-productos">
-            <ul class="caption">
-              <li>Hierros de construcción DN</li>
-              <li>Hierro de construcción liso en barra</li>
-              <li>Hierro liso en rollo 0,6 mm</li>
-              <li>Perfiles pesados IPN-UPN</li>
-              <li>Chapa doble decapada de 0,3 a 2,10 mm</li>
-              <li>Chapas galvanizadas lisas</li>
-              <li>Chapas de techo acanaladas y trapezoidales</li>
-              <li>Caños estructurales cuadrados, rectangulares y redondos</li>
-              <li>Alambres galvanizados</li>
-              <li>Alambres recocidos</li>
-              <li>Alambre de púa</li>
-              <li>Alambre concertina</li>
+            <ul>
+              <li><p>Hierros de construcción DN</p></li>
+              <li><p>Hierro de construcción liso en barra</p></li>
+              <li><p>Hierro liso en rollo 0,6 mm</p></li>
+              <li><p>Perfiles pesados IPN-UPN</p></li>
+              <li><p>Chapa doble decapada de 0,3 a 2,10 mm</p></li>
+              <li><p>Chapas galvanizadas lisas</p></li>
+              <li><p>Chapas de techo acanaladas y trapezoidales</p></li>
+              <li><p>Caños estructurales cuadrados, rectangulares y redondos</p></li>
+              <li><p>Alambres galvanizados</p></li>
+              <li><p>Alambres recocidos</p></li>
+              <li><p>Alambre de púa</p></li>
+              <li><p>Alambre concertina</p></li>
             </ul>
-            <ul class="caption">
-              <li>Clavos punta parís</li>
-              <li>Clavos cabeza de plomo</li>
-              <li>Electrodos</li>
-              <li>Mallas Acima</li>
-              <li>Metal desplegado pesado</li>
-              <li>Accesorios para rejas: bisagras, cajas de cerradura, pasadores, cerraduras, sombreretes, puntas, antióxidos, etc.</li>
-              <li>Alambre artístico</li>
-              <li>Perfilería: angulos, planchuelas, cuadrados, redondos, hierro te</li>
-              <li>Planchuelas punzonadas</li>
-              <li>Perfiles de chapa C y U</li>
+            <ul>
+              <li><p>Clavos punta parís</p></li>
+              <li><p>Clavos cabeza de plomo</p></li>
+              <li><p>Electrodos</p></li>
+              <li><p>Mallas Acima</p></li>
+              <li><p>Metal desplegado pesado</p></li>
+              <li><p>Accesorios para rejas: bisagras, cajas de cerradura, pasadores, cerraduras, sombreretes, puntas, antióxidos, etc.</p></li>
+              <li><p>Alambre artístico</p></li>
+              <li><p>Perfilería: angulos, planchuelas, cuadrados, redondos, hierro te</p></li>
+              <li><p>Planchuelas punzonadas</p></li>
+              <li><p>Perfiles de chapa C y U</p></li>
             </ul>
           </div>
         </div>
@@ -165,10 +176,6 @@
           <div class="scroll-anchor" id="sucursalesSection"></div>
 
           <!-- Introduccion -->
-          <div class="texto-con-linea-roja">
-            <p>SUCURSALES</p>
-            <img src="./src/public/images/red-line.svg" alt="Red line">
-          </div>
           <h2>Donde encontrarnos</h2>
           <p class="body-large">
             Nuestra casa central está situada en Avenida Hipólito Yrigoyen 13104 en
@@ -192,29 +199,29 @@
           </div>
 
           <!-- Adrogue -->
-          <div class="blue-box">
+          <div class="blue-box adrogue">
             <div class="sucursal-info">
               <div class="localidad">
-                <h4 class="white">Adrogué</h4>
+                <h4>Adrogué</h4>
               </div>
               <div class="bloque">
                 <div class="linea">
                   <div class="icono"><img src="./src/public/images/icons/location.svg" alt="Location logo"></div>
-                  <p class="label white">Av. Hipólito Yrigoyen 13104</p>
+                  <p class="label">Av. Hipólito Yrigoyen 13104</p>
                 </div>
                 <div class="linea">
                   <div class="icono"><img src="./src/public/images/icons/telefono.svg" alt="Location logo"></div>
-                  <p class="white">4293-1561 / 4214-1085</p>
+                  <p>4293-1561 / 4214-1085</p>
                 </div>
               </div>
               <div class="bloque">
                 <div class="linea">
                   <div class="icono"><img src="./src/public/images/icons/fax.svg" alt="Location logo"></div>
-                  <p class="white">4294-5818</p>
+                  <p>4294-5818</p>
                 </div>
                 <div class="linea">
                   <div class="icono"><img src="./src/public/images/icons/email.svg" alt="Location logo"></div>
-                  <p class="white">hierrofesrl@speedy.com.ar</p>
+                  <p>hierrofesrl@speedy.com.ar</p>
                 </div>
               </div>
             </div>
@@ -224,29 +231,29 @@
           </div>
 
           <!-- 9 de Abril -->
-          <div class="blue-box">
+          <div class="blue-box camino">
             <div class="sucursal-info">
               <div class="localidad">
-                <h4 class="white">9 de Abril</h4>
+                <h4>9 de Abril</h4>
               </div>
               <div class="bloque">
                 <div class="linea">
                   <div class="icono"><img src="./src/public/images/icons/location.svg" alt="Location logo"></div>
-                  <p class="label white">Camino de Cintura 4377</p>
+                  <p class="label">Camino de Cintura 4377</p>
                 </div>
                 <div class="linea">
                   <div class="icono"><img src="./src/public/images/icons/telefono.svg" alt="Location logo"></div>
-                  <p class="white">4693-0336 / 4693-0371</p>
+                  <p>4693-0336 / 4693-0371</p>
                 </div>
               </div>
               <div class="bloque">
                 <div class="linea">
                   <div class="icono"><img src="./src/public/images/icons/fax.svg" alt="Location logo"></div>
-                  <p class="white">4693-0398</p>
+                  <p>4693-0398</p>
                 </div>
                 <div class="linea">
                   <div class="icono"><img src="./src/public/images/icons/email.svg" alt="Location logo"></div>
-                  <p class="white">hierrofecc@speedy.com.ar</p>
+                  <p>hierrofecc@speedy.com.ar</p>
                 </div>
               </div>
             </div>
@@ -259,17 +266,20 @@
 
       <!-- ******** Contacto ******** -->
       <div class="contacto">
+
+        <!-- Scroll anchor -->
+        <div class="scroll-anchor" id="contactoSection"></div>
+        
         <div class="container">
 
-          <!-- Scroll anchor -->
-          <div class="scroll-anchor" id="contactoSection"></div>
+
 
           <!-- Introduccion -->
           <div class="intro">
-            <div class="texto-con-linea-roja">
+            <!-- <div class="texto-con-linea-roja">
               <p>CONTACTO</p>
               <img src="./src/public/images/red-line.svg" alt="Linea roja">
-            </div>
+            </div> -->
             <h2>Envianos tu mensaje</h2>
             <p class="body-large">Realiza tus consultas a través del siguiente formulario y te responderemos a la brevedad.</p>
           </div>
@@ -301,8 +311,7 @@
       <!-- ******** Footer ******** -->
       <div class="footer">
 
-        <!-- Rectangulo rojo -->
-        <div class="red-rectangle"></div>
+
 
         <!-- Sucursal info -->
         <div class="container">
@@ -355,6 +364,9 @@
           </div>
 
         </div>
+
+
+
       </div>
     </div>
   </body>
