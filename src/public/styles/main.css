@@ -73,6 +73,7 @@ input::placeholder, textarea::placeholder {
   font-weight: 300;
   line-height: 20px;
 }
+/* Buttons */
 button {
   font-size: 16px;
   font-weight: 400;
@@ -128,7 +129,7 @@ h1, h2, .body-large, .texto-con-linea-roja {
 button, a {
   cursor: pointer;
 }
-a[href^=tel] {
+a {
   text-decoration: inherit;
   color: inherit;
 }
@@ -260,6 +261,19 @@ nav {
   line-height: 0;
   font-size: 60px;
   color: var(--accent_1_red);
+}
+.hero .button {
+    width: 230px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent_3_teal);
+    color: var(--white);
+    display: block;
+    margin-top: 30px;
+}
+.hero .button:hover {
+  background-color: var(--accent_3_teal_dark);
 }
 @media (min-width: 768px) {
   .hero {
@@ -594,17 +608,16 @@ nav {
   border: 2px solid #dce1e1;
   background: #f9fafb;
 }
-.contacto button {
-  width: 100px;
-  height: 45px;
-  border: none;
-  margin-top: 30px;
-  border-radius: 5px;
-  background-color: var(--accent_3_teal);
-}
-.contacto button:hover {
-  background-color: var(--accent_3_teal_dark);
-}
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 768px) {
   .contacto {
     padding: 130px 0;
