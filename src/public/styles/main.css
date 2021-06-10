@@ -61,6 +61,9 @@ p {
   font-weight: 900;
   line-height: 26px;
 }
+.bold {
+  font-weight: 700;
+}
 /* Inputs */
 input, textarea {
   font-size: 16px;
