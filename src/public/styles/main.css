@@ -542,6 +542,10 @@ nav {
   height: 25px;
   margin-right: 20px;
 }
+.sucursales .blue-box .linea .icono img {
+  width: 25px;
+  height: 25px;
+}
 .sucursales .mapa {
   display: flex;
   align-items: center;
@@ -644,6 +648,10 @@ nav {
   height: 25px;
   display: flex;
   margin-right: 20px;
+}
+.footer .sucursal-info .linea .icono img {
+  width: 25px;
+  height: 25px;
 }
 .footer .social-media {
   display: flex;
