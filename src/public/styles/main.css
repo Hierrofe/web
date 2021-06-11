@@ -260,7 +260,7 @@ nav {
 
 /* ******** Hero banner ******** */
 .hero {
-  padding: 60px 20px 80px;
+  padding: 30px 20px 80px;
   background-color: var(--primary_blue);
 }
 .hero .red-dot {
@@ -269,7 +269,7 @@ nav {
   color: var(--accent_1_red);
 }
 .hero .button {
-    width: 325px;
+    width: 265px;
     padding: 20px;
     border: none;
     border-radius: 5px;
@@ -284,10 +284,18 @@ nav {
 .hero .whatsapp {
   height: 25px;
   width: 25px;
+  margin-right: 5px;
+  margin-bottom: -7px;
 }
 @media (min-width: 768px) {
   .hero {
     padding: 70px 0 80px;
+  }
+  .hero .whatsapp {
+    margin-right: 10px;
+  }
+  .hero .button {
+      width: 270px;
   }
   .hero .paragraphs-and-picture {
     display: flex;
