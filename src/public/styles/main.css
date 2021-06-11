@@ -104,6 +104,9 @@ button {
 .white {
   color: var(--white);
 }
+.accent_3_teal {
+  color: var(--accent_3_teal);
+}
 
 /* ******** Common ******** */
 .scroll-anchor {
@@ -266,7 +269,7 @@ nav {
   color: var(--accent_1_red);
 }
 .hero .button {
-    width: 230px;
+    width: 325px;
     padding: 20px;
     border: none;
     border-radius: 5px;
@@ -277,6 +280,10 @@ nav {
 }
 .hero .button:hover {
   background-color: var(--accent_3_teal_dark);
+}
+.hero .whatsapp {
+  height: 25px;
+  width: 25px;
 }
 @media (min-width: 768px) {
   .hero {
@@ -585,42 +592,22 @@ nav {
 .contacto {
   padding: 80px 0 100px;
 }
-.contacto .formulario-de-contacto {
-  max-width: 335px;
+.contacto .whatsapp h4 {
+  margin-bottom: 20px;
 }
-.contacto .intro {
-  max-width: 400px;
-  margin-bottom: 40px;
+.contacto .email h4 {
+  margin-top: 20px;
 }
-.contacto input {
-  width: 100%;
-  height: 50px;
-  border-radius: 5px;
-  padding-left: 10px;
-  margin-bottom: 14px;
-  border: 2px solid #dce1e1;
-  background: #f9fafb;
+.contacto p:first-of-type {
+  max-width: 600px;
+  margin-bottom: 50px;
 }
-.contacto textarea {
-  width: 100%;
-  resize: none;
-  height: 200px;
-  border-radius: 5px;
-  margin-bottom: 14px;
-  padding: 10px;
-  border: 2px solid #dce1e1;
-  background: #f9fafb;
+.contacto a:hover {
+  color: var(--accent_3_teal_dark);
 }
-
-
-
-
-
-
-
-
-
-
+.whatsapp img {
+  width: 200px;
+}
 @media (min-width: 768px) {
   .contacto {
     padding: 130px 0;
@@ -628,25 +615,11 @@ nav {
   .contacto .container {
     display: flex;
   }
-  .contacto .intro {
-    width: 312px;
-    margin-right: 80px;
+  .whatsapp h4 {
+    margin-right: 50px;
   }
-  .contacto form {
-    width: 335px;
-  }
-  .contacto .formulario-de-contacto {
-    max-width: none;
-    margin-top: 12px;
-  }
-}
-@media (min-width: 1024px) {
-  .contacto .intro {
-    width: 390px;
-    margin-right: 120px;
-  }
-  .contacto form {
-    width: 450px;
+  .contacto .email h4 {
+    margin-top: 40px;
   }
 }
 
