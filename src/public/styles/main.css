@@ -88,6 +88,10 @@ button {
   --grey_1: #E5E5E5;
   --grey_2: #F5F5F5;
   --grey_3: #b0bdbf;
+  /* Meli */
+  --meli_yellow: #ffe600;
+  --meli_yellow_dark: #c2af02;
+  --meli_blue: #2d3277;
 }
 .white {
   color: var(--white);
@@ -256,7 +260,7 @@ nav {
   font-size: 60px;
   color: var(--accent_1_red);
 }
-.hero .button {
+.hero .whatsapp-button {
     width: 265px;
     padding: 20px;
     border: none;
@@ -266,10 +270,29 @@ nav {
     display: block;
     margin-top: 30px;
 }
-.hero .button:hover {
+.hero .meli-button {
+    width: 265px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--meli_yellow);
+    color: var(--meli_blue);
+    display: block;
+    margin-top: 30px;
+}
+.hero .whatsapp-button:hover {
   background-color: var(--accent_3_teal_dark);
 }
-.hero .whatsapp {
+.hero .meli-button:hover {
+  background-color: var(--meli_yellow_dark);
+}
+.hero .whatsapp-icon {
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+  margin-bottom: -7px;
+}
+.hero .meli-icon {
   height: 25px;
   width: 25px;
   margin-right: 5px;
@@ -279,10 +302,16 @@ nav {
   .hero {
     padding: 70px 0 80px;
   }
-  .hero .whatsapp {
+  .hero .whatsapp-icon {
     margin-right: 10px;
   }
-  .hero .button {
+  .hero .meli-icon {
+    margin-right: 10px;
+  }
+  .hero .whatsapp-button {
+      width: 270px;
+  }
+  .hero .meli-button {
       width: 270px;
   }
   .hero .paragraphs-and-picture {
